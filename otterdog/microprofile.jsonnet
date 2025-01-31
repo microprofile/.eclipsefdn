@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('technology.microprofile', 'microprofile') {
   settings+: {
-    billing_email: "webmaster@eclipse-foundation.org",
     blog: "http://microprofile.io",
     description: "",
     twitter_username: "MicroProfileIO",
@@ -84,8 +83,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "Top level github repo for defining the content of the MicroProfile deliverables.",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -96,8 +93,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -109,8 +104,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -124,8 +117,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       description: "Microprofile.io Demo Code - Web Services Conference Application",
       has_discussions: true,
       homepage: "http://microprofile.io/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -148,8 +139,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       description: "MicroProfile Configuration Feature",
       has_discussions: true,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -161,8 +150,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -175,8 +162,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       description: "DEPRECATED - Being replaced by Eclipse Contributor list/process",
       homepage: "http://microprofile.io/contributors",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -188,8 +173,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       description: "For the evolution of new ideas",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -202,8 +185,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_security_updates_enabled: true,
       description: "microprofile fault tolerance",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -216,8 +197,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_security_updates_enabled: true,
       description: "microprofile-graphql",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -230,8 +209,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_security_updates_enabled: true,
       description: "microprofile-health",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -243,8 +220,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -256,8 +231,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       description: "microprofile-jwt-bridge",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "jwt",
         "microprofile"
@@ -274,8 +247,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_security_updates_enabled: true,
       description: "microprofile-lra",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -286,8 +257,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -302,8 +271,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       has_discussions: true,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -317,8 +284,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       description: "Microprofile open api",
       has_discussions: true,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -331,8 +296,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_security_updates_enabled: true,
       description: "microprofile-opentracing",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -344,8 +307,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -357,8 +318,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "Various presentations given about MicroProfile",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -370,8 +329,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -384,8 +341,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_security_updates_enabled: true,
       description: "Microprofile project",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -399,8 +354,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       description: "MicroProfile Rest Client",
       has_discussions: true,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -412,8 +365,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       description: "Micro Profile Samples",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -441,8 +392,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       has_discussions: true,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -454,8 +403,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -468,8 +415,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_security_updates_enabled: true,
       description: "microprofile-service-mesh-service-a",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -482,8 +427,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_security_updates_enabled: true,
       description: "microprofile-service-mesh-service-b",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -498,8 +441,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "master",
       gh_pages_source_path: "/docs",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -518,8 +459,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -533,8 +472,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       description: "MicroProfile project generator source code",
       has_discussions: true,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -545,8 +482,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       description: "microprofile telemetry",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -556,8 +491,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -570,8 +503,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       dependabot_alerts_enabled: false,
       description: "Repo to host official Working Group documents under revision control",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -582,8 +513,6 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
