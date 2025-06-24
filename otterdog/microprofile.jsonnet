@@ -52,11 +52,12 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
     orgs.newRepo('microprofile') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      archived: true,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
+      dependabot_security_updates_enabled: true,
       description: "Repository for important documentation - the index to the project / community",
-      has_issues: false,
+      has_discussions: true,
+      has_issues: true,
       homepage: "",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
@@ -80,7 +81,7 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
     orgs.newRepo('microprofile-bom') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       description: "Top level github repo for defining the content of the MicroProfile deliverables.",
       web_commit_signoff_required: false,
@@ -517,6 +518,27 @@ orgs.newOrg('technology.microprofile', 'microprofile') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+    },
+    orgs.newRepo('microprofile-tutorial-ui') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "The UI for MicroProfile Tutorial",
+      gh_pages_build_type: "workflow",
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          deployment_branch_policy: "selected",
+          branch_policies: [
+            "main",
+          ]
+        },
+      ],
     },
   ],
 } + {
